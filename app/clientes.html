@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ts</title>
+    <script defer src="js/model/conta.js"></script>
+    <script defer src="js/model/conta-bonificada.js"></script>
+    <script defer src="js/model/poupanca.js"></script>
+    <script defer src="js/model/contas.js"></script>
+    <script defer src="js/model/cliente.js"></script>
+    <script defer src="js/model/clientes.js"></script>
+    <script defer src="js/controller/cliente-controller.js"></script>
+    <script defer src="js/clienteApp.js"></script>
+</head>
+<body>
+    <a href="./index.html">voltar</a><br>
+    <label>Id</label>
+    <input type="text" id="contaId"><br>
+    <label>Nome</label>
+    <input type="text" id="nome"><br>
+    <label>Cpf</label>
+    <input type="text" id="cpf"><br>
+    <button id="inserir" onclick="clienteController.inserir1(event)">inserir</button><br>
+    <button id="listar" onclick="clienteController.listar1()">Listar</button><br>
+    <label>pesquisar</label>
+    <input type="text" id="cpfPesquisar">
+    <button id="btnPesquisar" onclick="clienteController.pesquisar()">pesquisar</button><br>
+    <label>remover</label>
+    <input type="text" id="cpfRemover">
+    <button id="btnRemover" onclick="clienteController.remover()">remover</button>
+    <div id="listar1"></div>
+    
+
+</body>
+</html>

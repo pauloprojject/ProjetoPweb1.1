@@ -1,0 +1,1 @@
+let clienteController = new ClienteController();
